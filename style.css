@@ -4,6 +4,7 @@ body {
   background: #f6f6f6;
   color: #333;
   line-height: 1.6;
+  font-size: 18px;
   animation: fadeIn 1.2s ease-out;
 }
 
@@ -14,7 +15,7 @@ body {
 
 header, footer, section, .features li, .gallery-grid img, .contact ul {
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* unified shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 header {
