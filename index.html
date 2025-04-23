@@ -7,10 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+  <style>
+    @keyframes logoBounce {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.02, 0.98); }
+      50% { transform: scale(0.98, 1.02); }
+      75% { transform: scale(1.01, 0.99); }
+    }
+  </style>
 <body>
   <div style="width: 100%; background: black; color: white; text-align: center; padding: 0.5rem 1rem; font-size: 1.2rem;">👋 Welcome to our new look site! 👋</div>
-  <header style="border-radius: 0;">
-    <h1>Lynn's Van</h1>
+  <header style="border-radius: 0; display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+    <a href="index.html"><img src="lynnsvan-logo.svg" alt="Lynn's Van Logo" style="height: 60px; max-width: 120px; animation: logoBounce 6s ease-in-out infinite; filter: drop-shadow(0 1px 4px rgba(0,0,0,0.05));"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
