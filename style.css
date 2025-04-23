@@ -74,7 +74,6 @@ section {
   min-width: 250px;
 }
 
-/* Booking Form */
 form {
   background: #eaf4f8;
   display: flex;
@@ -127,7 +126,6 @@ form button:active {
   transform: scale(0.98);
 }
 
-/* Contact */
 .contact ul {
   list-style: none;
   padding: 1rem;
@@ -145,7 +143,6 @@ form button:active {
   text-decoration: underline;
 }
 
-/* Gallery */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -160,7 +157,6 @@ form button:active {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Footer */
 footer {
   background: #2b4c59;
   color: #fff;
@@ -170,7 +166,6 @@ footer {
   border-radius: 0;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .features li,
   .butlins li {
