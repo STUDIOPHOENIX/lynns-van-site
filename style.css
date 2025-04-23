@@ -1,4 +1,4 @@
-/* Import base styling */
+/* Base setup */
 body {
   margin: 0;
   font-family: 'Arimo', sans-serif;
@@ -8,16 +8,15 @@ body {
   animation: fadeIn 1.2s ease-out;
 }
 
-/* Subtle entrance animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Apply soft edges and shadows */
-header, footer, section, .notice, .features li, .gallery-grid img, .contact ul {
+/* Rounded & elevated elements */
+header, footer, section, .features li, .gallery-grid img, .contact ul {
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 /* Header */
@@ -40,7 +39,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* General section layout */
+/* Section styling */
 section {
   background: #ffffff;
   padding: 2rem;
@@ -48,13 +47,13 @@ section {
   max-width: 900px;
 }
 
-/* Hero */
+/* Hero section */
 .hero {
   background: #eaf4f8;
   text-align: center;
 }
 
-/* Feature + Butlin's Lists */
+/* Feature & Butlins sections */
 .features ul, .butlins ul {
   list-style: none;
   padding: 0;
@@ -70,15 +69,15 @@ section {
   border: 1px solid #ddd;
 }
 
-/* Under Construction Notice */
-.notice {
+/* CTA & Notice banners */
+.cta, .notice {
+  text-align: center;
   background: #fff8dc;
   color: #4a4a4a;
-  text-align: center;
-  animation: fadeIn 1.5s ease-out;
+  padding: 2rem;
 }
 
-/* Contact block */
+/* Contact section */
 .contact ul {
   list-style: none;
   padding: 1rem;
@@ -109,7 +108,7 @@ section {
   width: 100%;
   height: auto;
   display: block;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* Footer */
