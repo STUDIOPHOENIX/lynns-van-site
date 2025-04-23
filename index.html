@@ -6,7 +6,6 @@
   <title>Lynn's Van – Butlin’s Skegness Caravan Hire</title>
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-</head>
   <style>
     @keyframes logoBounce {
       0%, 100% { transform: scale(1); }
@@ -14,12 +13,35 @@
       50% { transform: scale(0.98, 1.02); }
       75% { transform: scale(1.01, 0.99); }
     }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      header nav {
+        order: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem 0;
+      }
+      header a img {
+        height: 70px !important;
+        margin: 0.2rem 0;
+      }
+      main {
+        padding: 1rem !important;
+      }
+    }
   </style>
+</head>
 <body>
   <div style="width: 100%; background: #434343; color: white; text-align: center; padding: 0.5rem 1rem; font-size: 1.2rem;">👋 Welcome to our new look site! 👋</div>
-  <header style="border-radius: 0; display: flex; align-items: center; justify-content: space-between; padding: 0.2rem 1rem; background: #8D9FE8;">
+  <header style="border-radius: 0; display: flex; align-items: center; justify-content: space-between; padding: 0.2rem 1rem; background: #8D9FE8; flex-wrap: wrap;">
     <a href="index.html" style="padding-left: 1rem;"><img src="lynnsvan-logo.svg" alt="Lynn's Van Logo" style="height: 120px; max-width: 200px; animation: logoBounce 2s ease-in-out infinite; filter: drop-shadow(0 1px 4px rgba(0,0,0,0.05));"></a>
-    <nav style="flex-grow: 1; text-align: center;">
+    <nav style="flex-grow: 1; text-align: center; display: flex; justify-content: center; gap: 2rem;">
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
@@ -32,6 +54,7 @@
     </p>
 
     <section class="hero" style="background: #8D9FE8; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+      <h2>Welcome to Lynn’s Van at Butlin’s Skegness!</h2>
       <h2>🚧 UNDER CONSTRUCTION 🚧</h2>
       <p><strong>🛠️ Please pardon our dust while we build something awesome! 🛠️</strong></p>
       <p>Looking for a seaside break that’s got <strong>something for everyone</strong>? You’ve just found it! Lynn’s Van is a comfy, 3-bedroom static caravan tucked right inside the brilliant Butlin’s Skegness resort — giving you all the cozy caravan vibes <em>plus</em> access to one of the UK’s top holiday parks.</p>
@@ -99,7 +122,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2020 Lynn's Van. All rights reserved.</p>
+    <p>&copy; 2018 Lynn's Van. All rights reserved.</p>
   </footer>
 </body>
 </html>
