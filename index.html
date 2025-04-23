@@ -49,9 +49,23 @@
     </section>
 
     <section class="cta">
-      <h3>Book Your Stay</h3>
-      <p>Lynn’s Van is available to hire year-round with flexible dates and great value. <a href="mailto:smithandjones59@hotmail.com">Get in touch to plan your trip!</a></p>
-    </section>
+  <h3>Book Your Stay</h3>
+  <form action="mailto:smithandjones59@hotmail.com" method="POST" enctype="text/plain">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="dates">Preferred Dates:</label><br>
+    <input type="text" id="dates" name="dates" placeholder="e.g. 12th–16th July"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" placeholder="Let us know any questions or requests!"></textarea><br><br>
+
+    <button type="submit">Send Booking Request</button>
+  </form>
+</section>
 
     <section class="location">
       <h3>Where We Are</h3>
