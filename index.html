@@ -14,6 +14,11 @@
       75% { transform: scale(1.01, 0.99); }
     }
     @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     #menu-toggle {
       display: block;
     }
@@ -34,7 +39,7 @@
   <header style="border-radius: 0; display: flex; align-items: center; justify-content: space-between; padding: 0.2rem 1rem; background: #8D9FE8; flex-wrap: wrap; position: relative; max-width: 100%; overflow-x: hidden;">
     <button id="menu-toggle" style="display: none; background: none; border: none; font-size: 1.8rem; cursor: pointer; position: absolute; left: 1rem; top: 1rem; z-index: 10;">&#9776;</button>
     <a href="index.html" style="margin: 0 auto;"><img src="lynnsvan-logo.svg" alt="Lynn's Van Logo" style="height: 120px; max-width: 200px; animation: logoBounce 2s ease-in-out infinite; filter: drop-shadow(0 1px 4px rgba(0,0,0,0.05));"></a>
-    <nav id="mobile-menu" style="display: flex; flex-direction: row; gap: 2rem; justify-content: center;">
+    <nav id="mobile-menu" style="display: flex; flex-direction: row; gap: 2rem; justify-content: center; flex-wrap: wrap;">
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
