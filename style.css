@@ -120,3 +120,55 @@ footer {
   margin-top: 2rem;
   border-radius: 0;
 }
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: 'Arimo', sans-serif;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+form input,
+form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fafafa;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2b4c59;
+  box-shadow: 0 0 0 3px rgba(43, 76, 89, 0.1);
+  outline: none;
+}
+
+form button {
+  background-color: #2b4c59;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+form button:hover {
+  background-color: #3c5f6f;
+}
+
+form button:active {
+  transform: scale(0.98);
+}
