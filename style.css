@@ -1,4 +1,4 @@
-/* Base setup */
+/* Base reset and layout */
 body {
   margin: 0;
   font-family: 'Arimo', sans-serif;
@@ -13,7 +13,6 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Rounded & elevated elements */
 header, footer, section, .features li, .gallery-grid img, .contact ul {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
@@ -28,7 +27,6 @@ header {
 }
 
 nav a {
-  font-family: 'Arimo', sans-serif;
   color: #fff;
   margin: 0 1rem;
   text-decoration: none;
@@ -39,7 +37,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Section styling */
+/* Section containers */
 section {
   background: #ffffff;
   padding: 2rem;
@@ -53,7 +51,7 @@ section {
   text-align: center;
 }
 
-/* Feature & Butlins sections */
+/* Feature & Butlins Lists */
 .features ul, .butlins ul {
   list-style: none;
   padding: 0;
@@ -69,58 +67,13 @@ section {
   border: 1px solid #ddd;
 }
 
-/* CTA & Notice banners */
-.cta, .notice {
+/* CTA / Booking form */
+.cta {
   text-align: center;
   background: #fff8dc;
   color: #4a4a4a;
-  padding: 2rem;
 }
 
-/* Contact section */
-.contact ul {
-  list-style: none;
-  padding: 1rem;
-  background: #f9f9f9;
-  width: fit-content;
-  margin: auto;
-}
-
-.contact a {
-  color: #2b4c59;
-  text-decoration: none;
-  font-family: 'Arimo', sans-serif;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
-/* Gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: auto;
-  display: block;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-}
-
-/* Footer */
-footer {
-  background: #2b4c59;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  border-radius: 0;
-}
-/* Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -171,4 +124,47 @@ form button:hover {
 
 form button:active {
   transform: scale(0.98);
+}
+
+/* Contact section */
+.contact ul {
+  list-style: none;
+  padding: 1rem;
+  background: #f9f9f9;
+  width: fit-content;
+  margin: auto;
+}
+
+.contact a {
+  color: #2b4c59;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery placeholder if needed */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+  background: #2b4c59;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0;
 }
