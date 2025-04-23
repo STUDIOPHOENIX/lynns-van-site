@@ -17,9 +17,9 @@
     </nav>
   </header>
   <main style="padding: 2rem; box-sizing: border-box;">
-  <p>Welcome to Lynn's Van – a privately owned static caravan available for hire on the bustling Butlins resort, just minutes from the sea.</p>
- 
-<section class="hero">
+    <p>Welcome to Lynn's Van – a privately owned static caravan available for hire on the bustling Butlins resort, just minutes from the sea.</p>
+
+    <section class="hero">
       <h2>Welcome to Lynn’s Van at Butlin’s Skegness!</h2>
       <h2>🚧 UNDER CONSTRUCTION 🚧</h2>
       <p><strong>🛠️ Please pardon our dust while we build something awesome! 🛠️</strong></p>
@@ -50,23 +50,27 @@
     </section>
 
     <section class="cta">
-  <h3>Book Your Stay</h3>
-  <form action="mailto:smithandjones59@hotmail.com" method="POST" enctype="text/plain">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+      <h3>Book Your Stay</h3>
+      <form action="https://formsubmit.co/smithandjones59@hotmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://studiophoenix.github.io/lynns-van-site/thank-you.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="dates">Preferred Dates:</label>
-    <input type="text" id="dates" name="dates" placeholder="e.g. 12th–16th July">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" placeholder="Got any questions or special requests? Pop them here!"></textarea>
+        <label for="dates">Preferred Dates:</label>
+        <input type="text" id="dates" name="dates" placeholder="e.g. 12th–16th July">
 
-    <button type="submit">Send Booking Request</button>
-  </form>
-</section>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Got any questions or special requests? Pop them here!"></textarea>
+
+        <button type="submit">Send Booking Request</button>
+      </form>
+    </section>
 
     <section class="location">
       <h3>Where We Are</h3>
