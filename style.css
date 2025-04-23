@@ -51,7 +51,7 @@ section {
 }
 
 .hero {
-  background: #ffffff;
+  background: #eaf4f8;
   text-align: center;
 }
 
@@ -76,7 +76,7 @@ section {
 
 /* Booking Form */
 form {
-  background: #ffffff;
+  background: #eaf4f8;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
