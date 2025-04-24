@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Abnes';
+  src: url('abnes.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Base styles */
 body.site-body {
   font-family: 'Arimo', sans-serif;
