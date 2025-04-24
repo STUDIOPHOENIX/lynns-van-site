@@ -1,11 +1,25 @@
 /* Abnes font for STUDIOPHOENIX credit */
 .studiophoenix-credit {
-  font-family: 'Abnes', sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 0.8rem;
-  letter-spacing: 0.05em;
   opacity: 0.6;
   display: inline-block;
   margin-top: 0.25rem;
+}
+
+.studiophoenix-credit .phoenix-brand {
+  font-family: 'Abnes', sans-serif;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  font-size: 1rem;
+  opacity: 0.85;
+  color: #2c2c2c;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.studiophoenix-credit .phoenix-brand:hover {
+  color: #000;
+  text-shadow: 0 0 6px rgba(141, 159, 232, 0.35);
 }
 
 @font-face {
@@ -34,6 +48,8 @@ body.site-body {
   padding: 0.4rem 1rem;
   font-size: 1rem;
 }
+
+/* More styles continue... */
 
 /* Header */
 .site-header {
