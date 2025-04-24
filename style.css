@@ -44,6 +44,23 @@ body.site-body {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 16px rgba(141, 159, 232, 0.4));
 }
 
+.send-message-icon {
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+.send-message-icon:hover {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 10px rgba(141, 159, 232, 0.25));
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 0 8px rgba(141, 159, 232, 0.15));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 16px rgba(141, 159, 232, 0.3));
+  }
+}
+
 .site-nav {
   display: flex;
   gap: 0.8rem;
@@ -144,7 +161,6 @@ footer {
   background-color: #F7F0B4;
   font-size: 0.9rem;
   color: #434343;
-  margin-top: 0;
 }
 
 footer a {
@@ -169,13 +185,6 @@ footer a {
 .fade-section.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-.facebook-link {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  transition: text-shadow 0.2s ease;
 }
 
 .facebook-link:hover {
