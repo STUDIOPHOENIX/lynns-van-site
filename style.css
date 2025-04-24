@@ -102,6 +102,13 @@ body.site-body {
   background: #8D9FE8;
 }
 
+/* Remove bullet points */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 /* Form styling */
 .booking-form {
   display: flex;
