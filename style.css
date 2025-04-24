@@ -46,6 +46,7 @@ body.site-body {
 
 .send-message-icon {
   animation: glowPulse 2.5s ease-in-out infinite;
+  transition: filter 0.3s ease-in-out;
 }
 
 .send-message-icon:hover {
@@ -54,8 +55,18 @@ body.site-body {
 
 @keyframes glowPulse {
   0%, 100% {
-    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 0 8px rgba(141, 159, 232, 0.15));
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 16px rgba(141, 159, 232, 0.4));
   }
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 28px rgba(141, 159, 232, 0.6));
+  }
+}
+  50% {
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 28px rgba(141, 159, 232, 0.6));
+  }
+}
   50% {
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 16px rgba(141, 159, 232, 0.3));
   }
