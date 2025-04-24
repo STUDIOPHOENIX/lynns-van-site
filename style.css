@@ -45,12 +45,13 @@ body.site-body {
 }
 
 .send-message-icon {
-  animation: glowPulse 2.5s ease-in-out infinite;
-  transition: filter 0.3s ease-in-out;
+  animation: glowPulse 1.8s ease-in-out infinite;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .send-message-icon:hover {
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 10px rgba(141, 159, 232, 0.25));
+  transform: scale(1.07);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 20px rgba(141, 159, 232, 0.5));
 }
 
 @keyframes glowPulse {
@@ -58,6 +59,11 @@ body.site-body {
     transform: scale(1);
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 16px rgba(141, 159, 232, 0.4));
   }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 28px rgba(141, 159, 232, 0.6));
+  }
+}
   50% {
     transform: scale(1.03);
     filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 28px rgba(141, 159, 232, 0.6));
