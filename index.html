@@ -10,6 +10,13 @@
     p {
       font-size: 1.125rem;
     }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #F7F0B4;
+      font-size: 0.9rem;
+      color: #434343;
+    }
     @keyframes logoBounce {
       0%, 100% { transform: scale(1); }
       25% { transform: scale(1.02, 0.98); }
@@ -25,10 +32,10 @@
     <nav style="display: flex; gap: 0.8rem; align-items: center; text-shadow: 0px 1px 2px rgba(0,0,0,0.3);">
       <style>
         nav a:hover {
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  text-decoration: none;
-  color: inherit;
-}
+          text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+          text-decoration: none;
+          color: inherit;
+        }
       </style>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
@@ -68,7 +75,7 @@
 
       <section class="cta" style="background: #eaf4f8; padding: 2rem; border-radius: 16px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
         <h3>Book Your Stay</h3>
-        <form action="https://formsubmit.co/smithandjones59@hotmail.com" method="POST">
+        <form action="https://formsubmit.co/e/your-custom-id" method="POST">
           <input type="hidden" name="_next" value="https://studiophoenix.github.io/lynns-van-site/thank-you.html">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
@@ -80,12 +87,12 @@
           <input type="email" id="email" name="email" required>
 
           <label for="dates">Preferred Dates:</label>
-          <input type="text" id="dates" name="dates" placeholder="e.g. 12th–16th July">
+          <input type="text" id="dates" name="dates" placeholder="e.g. 12th–16th July 2025">
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="4" placeholder="Got any questions or special requests? Pop them here!"></textarea>
 
-          <button type="submit">Send Booking Request</button>
+          <button type="submit">Send Booking Enquiry</button>
         </form>
       </section>
 
@@ -98,11 +105,11 @@
         <h3>Contact Lynn</h3>
         <p><strong>Phone:</strong> 07852 950403<br>
         <strong>Email:</strong> <a href="mailto:smithandjones59@hotmail.com">smithandjones59@hotmail.com</a><br>
-        <strong>Facebook:</strong> <a href="https://facebook.com/lynnsvan" target="_blank">facebook.com/lynnsvan</a></p>
+        <strong>Follow us on Facebook:</strong> <a href="https://facebook.com/lynnsvan" target="_blank" style="display: inline-flex; align-items: center; gap: 0.4rem;"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" loading="lazy" style="width: 20px; height: 20px;"> facebook.com/lynnsvan</a></p>
       </section>
     </div>
   </main>
-  <footer style="text-align: center; padding: 1rem; background-color: #F7F0B4; font-size: 0.9rem; color: #434343;">
+  <footer>
     <p>&copy; 2018 Lynn's Van. All rights reserved.</p>
   </footer>
 </body>
