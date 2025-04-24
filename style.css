@@ -49,8 +49,6 @@ body.site-body {
   font-size: 1rem;
 }
 
-/* More styles continue... */
-
 /* Header */
 .site-header {
   display: flex;
@@ -76,6 +74,13 @@ body.site-body {
 
 .logo-img:hover {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 16px rgba(141, 159, 232, 0.4));
+}
+
+.send-message-icon {
+  padding: 0.05rem;
+  max-height: 80px;
+  height: auto;
+  width: auto;
 }
 
 .site-nav {
