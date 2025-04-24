@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lynn's Van – Butlin’s Skegness Caravan Hire</title>
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body class="site-body">
   <div class="announcement-bar">👋 Welcome to our new look site! 👋</div>
   <header class="site-header">
-    <a href="index.html"><img src="lynnsvan-logo.svg" class="logo-img" alt="Lynn's Van Logo"></a>
+    <a href="index.html"><img src="lynnsvan-logo2.svg" class="logo-img" alt="Lynn's Van Logo"></a>
     <nav class="site-nav">
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
@@ -19,15 +19,15 @@
   <main class="site-main">
     <div class="content-container">
 
-      <section class="hero fade-section section">
+      <section class="hero section">
         <h2>UNDER CONSTRUCTION</h2>
         <p><strong>🛠️ Please pardon our dust while we build something awesome! 🛠️</strong></p>
         <p>Looking for a seaside break that’s got <strong>something for everyone</strong>? You’ve just found it! Lynn’s Van is a comfy, 3-bedroom static caravan tucked right inside the brilliant Butlin’s Skegness resort — giving you all the cozy caravan vibes <em>plus</em> access to one of the UK’s top holiday parks.</p>
       </section>
 
-      <section class="features fade-section section white">
+      <section class="features section white">
         <h3>Your Home by the Sea</h3>
-        <ul class="feature-list">
+        <ul>
           <li>🛌 3 bedrooms – perfect for families or small groups</li>
           <li>🍳 Fully-equipped kitchen for cooking and snacks</li>
           <li>📺 Comfy living room with TV</li>
@@ -36,9 +36,9 @@
         </ul>
       </section>
 
-      <section class="butlins fade-section section white">
+      <section class="butlins section white">
         <h3>Why Stay at Butlin’s?</h3>
-        <ul class="feature-list">
+        <ul>
           <li>🎠 Unlimited fairground rides</li>
           <li>🏊‍♀️ Huge indoor water park with slides</li>
           <li>🎭 Live shows, music, and entertainment for all ages</li>
@@ -48,7 +48,7 @@
         </ul>
       </section>
 
-      <section class="cta fade-section section pale">
+      <section class="cta section pale">
         <h3>Book Your Stay</h3>
         <form action="https://formsubmit.co/smithandjones59@hotmail.com" method="POST" class="booking-form">
           <input type="hidden" name="_next" value="https://studiophoenix.github.io/lynns-van-site/thank-you.html">
@@ -62,21 +62,21 @@
           <input type="email" id="email" name="email" required class="form-field">
 
           <label for="dates">Preferred Dates:</label>
-          <input type="text" id="dates" name="dates" placeholder="e.g. 12th–16th July 2025" class="form-field">
+          <input type="text" id="dates" name="dates" placeholder="e.g. 12th–16th July" class="form-field">
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="4" placeholder="Got any questions or special requests? Pop them here!" class="form-field"></textarea>
 
-          <button type="submit" class="submit-button">Send Booking Enquiry</button>
+          <button type="submit" class="submit-button">Send Booking Request</button>
         </form>
       </section>
 
-      <section class="location fade-section section white">
+      <section class="location section white">
         <h3>Where We Are</h3>
-        <p><strong>Butlin’s Resort, Ingoldmells, Skegness</strong><br>Right by the sea — with shops, cafés, and classic seaside fun just around the corner.</p>
+        <p><strong>Butlin’s Resort, Skegness</strong><br>Right by the sea — with shops, cafés, and classic seaside fun just around the corner.</p>
       </section>
 
-      <section class="contact fade-section section pale">
+      <section class="contact section pale">
         <h3>Contact Lynn</h3>
         <p><strong>Phone:</strong> 07852 950403<br>
         <strong>Email:</strong> <a href="mailto:smithandjones59@hotmail.com">smithandjones59@hotmail.com</a><br>
@@ -85,20 +85,7 @@
     </div>
   </main>
   <footer>
-    <p>&copy; 2025 Lynn's Van. All rights reserved.</p>
+    <p>&copy; 2018 Lynn's Van. All rights reserved.</p>
   </footer>
-  <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('section').forEach(section => {
-      observer.observe(section);
-    });
-  </script>
 </body>
 </html>
