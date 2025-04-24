@@ -169,6 +169,13 @@ footer a {
   transform: translateY(0);
 }
 
+.facebook-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: text-shadow 0.2s ease;
+}
+
 .facebook-link:hover {
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
