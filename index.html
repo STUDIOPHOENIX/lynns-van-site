@@ -6,7 +6,25 @@
   <title>Lynn's Van – Butlin’s Skegness Caravan Hire</title>
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=4" />
-</head>
+  <style>
+    @keyframes glowPulse {
+      0%, 100% {
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 0 8px rgba(141, 159, 232, 0.15));
+      }
+      50% {
+        filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 16px rgba(141, 159, 232, 0.3));
+      }
+    }
+
+    .send-message-icon {
+      animation: glowPulse 2.5s ease-in-out infinite;
+    }
+
+    .send-message-icon:hover {
+      filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 10px rgba(141, 159, 232, 0.25));
+    }
+  </style>
+$1
 <body class="site-body">
   <div class="announcement-bar">👋 Welcome to our new look site! 👋</div>
   <header class="site-header">
@@ -55,7 +73,7 @@
       </section>
 
       <section class="contact section pale" style="text-align: center;">
-        <img src="send-message.svg" alt="Send a message" class="logo-img" style="margin-bottom: 0.5rem; height: 80px;">
+        <a href="contact.html" title="Send a message!"><img src="send-message.svg" alt="Send a message" class="logo-img send-message-icon" style="margin-bottom: 0.5rem; height: 80px;"></a>
         <p><a href="https://facebook.com/lynnsvan" class="facebook-link" target="_blank">Follow us on Facebook</a><br>
 <strong>Phone:</strong> 07852 950403</p>
       </section>
