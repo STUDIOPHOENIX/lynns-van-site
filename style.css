@@ -1,40 +1,40 @@
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #F7F0B4;
-  font-size: 0.9rem;
-  color: #434343;
-}
+<style>
+  .logo-img {
+    height: 120px;
+    max-width: 200px;
+    animation: logoBounce 2s ease-in-out infinite;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.05));
+    transition: filter 0.3s ease-in-out;
+  }
 
-nav a:hover {
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  text-decoration: none;
-  color: inherit;
-}
+  .logo-img:hover {
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 24px rgba(141, 159, 232, 0.6));
+  }
 
-a[href*="facebook.com"]:hover {
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-}
+  nav a:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    color: inherit;
+  }
 
-a[href*="facebook.com"]:visited {
-  color: inherit;
-}
+  a[href*="facebook.com"]:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
 
-.logo-img {
-  height: 120px;
-  max-width: 200px;
-  animation: logoBounce 2s ease-in-out infinite;
-  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.05));
-  transition: filter 0.3s ease-in-out;
-}
+  a[href*="facebook.com"]:visited {
+    color: inherit;
+  }
 
-.logo-img:hover {
-  filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 24px rgba(141, 159, 232, 0.6));
-}
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #F7F0B4;
+    font-size: 0.9rem;
+    color: #434343;
+  }
 
-@keyframes logoBounce {
-  0%, 100% { transform: scale(1); }
-  25% { transform: scale(1.02, 0.98); }
-  50% { transform: scale(0.98, 1.02); }
-  75% { transform: scale(1.01, 0.99); }
-}
+  @keyframes logoBounce {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.02, 0.98); }
+    50% { transform: scale(0.98, 1.02); }
+    75% { transform: scale(1.01,
