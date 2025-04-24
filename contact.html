@@ -3,35 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact – Lynn's Van</title>
-  <link rel="stylesheet" href="style.css?v=4" />
+  <title>Lynn's Van – Butlin’s Skegness Caravan Hire</title>
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body class="site-body">
   <div class="announcement-bar">👋 Welcome to our new look site! 👋</div>
   <header class="site-header">
     <a href="index.html"><img src="lynnsvan-logo.svg" class="logo-img" alt="Lynn's Van Logo"></a>
     <nav class="site-nav">
-      <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-
   <main class="site-main">
     <div class="content-container">
-      <section class="section pale">
-        <h2>Get in Touch</h2>
-        <p>To book your stay or ask a question, please contact Lynn directly:</p>
-        <ul>
-          <li><strong>Phone:</strong> 07852 950403</li>
-          <li><strong>Email:</strong> <a href="mailto:smithandjones59@hotmail.com">smithandjones59@hotmail.com</a></li>
-          <li><strong>Location:</strong> St Albans, Hertfordshire</li>
-        </ul>
+
+      <section class="cta section pale">
+        <h3>Book Your Stay</h3>
+        <form action="https://formsubmit.co/smithandjones59@hotmail.com" method="POST" class="booking-form">
+          <input type="hidden" name="_next" value="https://studiophoenix.github.io/lynns-van-site/thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required class="form-field">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required class="form-field">
+
+          <label for="dates">Preferred Dates:</label>
+          <input type="text" id="dates" name="dates" placeholder="e.g. 12th–16th July 2025" class="form-field">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Got any questions or special requests? Pop them here!" class="form-field"></textarea>
+
+          <button type="submit" class="submit-button">Send Booking Enquiry</button>
+        </form>
+      </section>
+
+      <section class="location section white">
+        <h3>Where We Are</h3>
+        <p><strong>Butlin’s Resort, Ingoldmells, Skegness</strong><br>Right by the sea — with shops, cafés, and classic seaside fun just around the corner.</p>
+      </section>
+
+      <section class="contact section pale">
+        <h3>Contact Lynn</h3>
+        <p><strong>Phone:</strong> 07852 950403<br>
+        <strong>Email:</strong> <a href="mailto:smithandjones59@hotmail.com">smithandjones59@hotmail.com</a><br>
+        <a href="https://facebook.com/lynnsvan" class="facebook-link" target="_blank">Follow us on Facebook</a></p>
       </section>
     </div>
   </main>
-
   <footer>
     <p>&copy; 2025 Lynn's Van. All rights reserved.</p>
   </footer>
