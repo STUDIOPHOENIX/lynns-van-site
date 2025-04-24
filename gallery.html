@@ -4,33 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery – Lynn's Van</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Lynn's Van</h1>
-    <nav>
+<body class="site-body">
+  <div class="announcement-bar">👋 Welcome to our new look site! 👋</div>
+  <header class="site-header">
+    <a href="index.html"><img src="lynnsvan-logo.svg" class="logo-img" alt="Lynn's Van Logo"></a>
+    <nav class="site-nav">
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section class="gallery">
-      <h2>Photo Gallery</h2>
-      <p>Take a look inside and around Lynn's Van:</p>
-      <div class="gallery-grid">
-        <img src="images/photo1.jpg" alt="Living area" />
-        <img src="images/photo2.jpg" alt="Kitchen" />
-        <img src="images/photo3.jpg" alt="Master bedroom" />
-        <img src="images/photo4.jpg" alt="Park surroundings" />
-      </div>
-    </section>
+  <main class="site-main">
+    <div class="content-container">
+      <section class="section white">
+        <h2>Photo Gallery</h2>
+        <p>Take a look inside and around Lynn's Van:</p>
+        <div class="gallery-grid">
+          <img src="images/photo1.jpg" alt="Living area" />
+          <img src="images/photo2.jpg" alt="Kitchen" />
+          <img src="images/photo3.jpg" alt="Master bedroom" />
+          <img src="images/photo4.jpg" alt="Park surroundings" />
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2020 Lynn's Van. All rights reserved.</p>
+    <p>&copy; 2025 Lynn's Van. All rights reserved.</p>
   </footer>
 </body>
 </html>
