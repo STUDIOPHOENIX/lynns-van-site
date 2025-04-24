@@ -36,7 +36,7 @@ a[href*="facebook.com"]:visited {
 }
 
 .logo-img:hover {
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 20px rgba(141, 159, 232, 0.4));
+  filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 20px rgba(141, 159, 232, 0.4));
 }
 
 .logo-img {
